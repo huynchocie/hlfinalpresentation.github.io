@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> My First Webpage </title>
+        <!-- access to css -->
+        <link rel="stylesheet" href="style.css">
+        <!-- access to icons -->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+        <!-- link access to contact form -->
+        <link rel="stylesheet" href="style.css">
+        <script src='jquery.js'></script>
+	    <script src='jquery.elevatezoom.js'></script>
+        <script src="main.js"> </script>
+ 
+
+    <body>
+        <!-- this is navigation bars -->
+        <header>
+            <a href="#" class="logo">
+                <img src="https://st2.depositphotos.com/4696897/9998/v/450/depositphotos_99989760-stock-illustration-flat-icon-on-white-background.jpg" alt="">
+            </a>
+
+            <!-- this is menu icons -->
+            <i class='bx bx-menu' id="menu-icon"></i>
+
+            <!-- links to other sections of the webpage -->
+            <ul class="navbar">
+                <li> <a href="index.html"> Home </a> </li>
+                <li> <a href="about.html"> About Us </a> </li>
+                <li> <a href="product.html"> Products </a> </li>
+                <li> <a href="contact.html"> Contact </a> </li>
+                <li> <a href="feedback.html"> Contact </a> </li>
+                
+            </ul>
+
+            <!-- icons for the header -->
+            <div class="header-icon">
+                <i class='bx bx-cart'></i>
+                <i class='bx bx-search-alt-2' id="search-icon"></i>
+            </div>
+
+            <!-- search box -->
+            <div class="search-box">
+                <input type="search" name="" id="" placeholder="Search Here...">
+            </div>
+        </header>
+
+        <section> 
+
+            <div class="form2-container">
+                <form>
+                    <div> 
+                        <label for="first-name"> First Name </label>
+                        <br>
+                        <input type="text" name="First Name">
+                    </div>
+                    <br>
+                    <div> 
+                        <label for="last-name"> Last Name </label>
+                        <br>
+                        <input type="text" name="Last Name">
+                    </div>
+                    <br>
+                    <div>
+                        <label class="selectoption" for="JS-Difficulty"> How Was Your Experience With Us <br> </label>
+                        <br>
+                        <select name="JS Difficulty">
+                            <br>
+                            <option> Enjoyable </option>
+                            <option> Need Improvement </option>
+                            <option> Terrible </option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <button class="form2-btn" type="submit"> Submit </button>
+                    </div>
+                    
+                </form>
+            </div> 
+        </section>
+
+        
+    
+        <script>
+            const form = document.querySelector('form');
+    
+            form.addEventListener('submit' , (e) => {
+                e.preventDefault();
+    
+                const fd = new FormData(form);
+    
+                const obj = Object.fromEntries(fd);
+                
+                const json = JSON.stringify(obj);
+                localStorage.setItem('form' , json);
+    
+                console.log(json);
+            })
+        </script>
+
+
+        
+
+    </body>
+</html>

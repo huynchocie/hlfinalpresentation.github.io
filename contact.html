@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> My First Webpage </title>
+        <!-- access to css -->
+        <link rel="stylesheet" href="style.css">
+        <!-- access to icons -->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+        <!-- link access to contact form -->
+        <link rel="stylesheet" href="style.css">
+        <script src='jquery.js'></script>
+	    <script src='jquery.elevatezoom.js'></script>
+        <script src="main.js"> </script>
+ 
+
+    <body>
+        <!-- this is navigation bars -->
+        <header>
+            <a href="#" class="logo">
+                <img src="https://st2.depositphotos.com/4696897/9998/v/450/depositphotos_99989760-stock-illustration-flat-icon-on-white-background.jpg" alt="">
+            </a>
+
+            <!-- this is menu icons -->
+            <i class='bx bx-menu' id="menu-icon"></i>
+
+            <!-- links to other sections of the webpage -->
+            <ul class="navbar">
+                <li> <a href="index.html"> Home </a> </li>
+                <li> <a href="about.html"> About Us </a> </li>
+                <li> <a href="product.html"> Products </a> </li>
+                <li> <a href="contact.html"> Contact </a> </li>
+                <li> <a href="feedback.html"> Contact </a> </li>
+                
+            </ul>
+
+            <!-- icons for the header -->
+            <div class="header-icon">
+                <i class='bx bx-cart'></i>
+                <i class='bx bx-search-alt-2' id="search-icon"></i>
+            </div>
+
+            <!-- search box -->
+            <div class="search-box">
+                <input type="search" name="" id="" placeholder="Search Here...">
+            </div>
+        </header>
+
+
+
+        <!-- contact  -->
+        <section class="contact" id="contact">
+            <div class="heading">
+                <h2> Contact Us </h2>
+                <p> We would love to hear your feedbacks about our services</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2> Get In Touch </h2>
+                    <div class="address">
+                        <i class='bx bx-map'> 1301 Avenida Cesar Chavez Monterey Park, CA 91754 United States </i>
+                        <i class='bx bx-phone'> +1 323 265 8650 </i>
+                        <i class='bx bx-envelope'> ukiyocrochet@gmail.com </i>
+                    </div>
+
+                    <div class="social"> 
+                        <a href="#"> <i class='bx bxl-facebook-circle'></i> </a>
+                        <a href="#"> <i class='bx bxl-instagram-alt' ></i> </a>
+                        <a href="#"> <i class='bx bxl-linkedin-square' ></i> </a>
+                    </div>
+                    
+                    <br>
+
+     
+                    <div class="form-container">
+                        <div class="row">
+                            <div class="form-message">
+                                <h2> Hello there! </h2>
+                                <h3> Please send us your conatact information about any concern you're having. </h3>
+                                <h3> Have a good day! </h3>
+                                <br>
+                            </div>
+                        </div>
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="541d212c-a26a-4c62-859b-3985731c51d4">
+                            <input 
+                                type="text" 
+                                class="form-control"
+                                id="name" 
+                                placeholder="Type Your Name" required
+                                />
+                            <input 
+                                type="text" 
+                                class="form-group"
+                                id="message" 
+                                placeholder="Type Your Message" required
+                                />
+                            <input 
+                                type="text" 
+                                id="email" 
+                                placeholder="Type Your Email Address" 
+                                name="mail" required
+                                />
+                            <button type="submit" class="form-btn" onclick="sendMail()"> Submit </button>
+                        </form>
+                    </div> 
+
+                </div>
+                <!-- google map -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.0948012445783!2d-118.15277312396907!3d34.041439218300155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2cf85228f0bdb%3A0xddbc1949f1ef7eec!2sEast%20Los%20Angeles%20College!5e0!3m2!1sen!2sus!4v1705910307862!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div> 
+        </section>
+
+    </body>
+</html>

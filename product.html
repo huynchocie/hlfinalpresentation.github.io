@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> My First Webpage </title>
+        <!-- access to css -->
+        <link rel="stylesheet" href="style.css">
+        <!-- access to icons -->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+        <!-- link access to contact form -->
+        <link rel="stylesheet" href="style.css">
+        <script src='jquery.js'></script>
+	    <script src='jquery.elevatezoom.js'></script>
+        <script src="main.js"> </script>
+    </head>
+
+
+    <body>
+        <!-- this is navigation bars -->
+        <header>
+            <a href="#" class="logo">
+                <img src="https://st2.depositphotos.com/4696897/9998/v/450/depositphotos_99989760-stock-illustration-flat-icon-on-white-background.jpg" alt="">
+            </a>
+
+            <!-- this is menu icons -->
+            <i class='bx bx-menu' id="menu-icon"></i>
+
+            <!-- links to other sections of the webpage -->
+            <ul class="navbar">
+                <li> <a href="index.html"> Home </a> </li>
+                <li> <a href="about.html"> About Us </a> </li>
+                <li> <a href="product.html"> Products </a> </li>
+                <li> <a href="contact.html"> Contact </a> </li>
+                <li> <a href="feedback.html"> Contact </a> </li>
+                
+            </ul>
+
+            <!-- icons for the header -->
+            <div class="header-icon">
+                <i class='bx bx-cart'></i>
+                <i class='bx bx-search-alt-2' id="search-icon"></i>
+            </div>
+
+            <!-- search box -->
+            <div class="search-box">
+                <input type="search" name="" id="" placeholder="Search Here...">
+            </div>
+        </header>
+
+
+        <!-- service page -->
+        <section class="products" id="products"> 
+            <div class="heading">
+                <h2> Here are our Popular Products </h2>
+            </div>
+            <!-- container -->
+            <div class="products-container">
+                <!-- first -->
+                <div class="box"> 
+                    <img id="scaling" src="vase tulip.jpg" alt="">
+                    <h3> Tulip Vase Decoration </h3>
+                    <div class="content">
+                        <span> $15 </span>
+                        <a href="#"> Add to Cart> </a>
+                    </div>
+                </div>
+                <!-- second -->
+                <div class="box"> 
+                    <img id="scaling-1" src="pastel tulip.jpg" alt="">
+                    <h3> Tulip Crochet Artificial Flowers </h3>
+                    <div class="content">
+                        <span> $5 </span>
+                        <a href="#"> Add to Cart> </a>
+                    </div>
+                </div>
+                <!-- third -->
+                <div class="box"> 
+                    <img id="scaling-2" src="rabit.jpg" alt="">
+                    <h3> Holiday Bunny Crochet Bouquet </h3>
+                    <div class="content">
+                        <span> $18 </span>
+                        <a href="#">  Add to Cart> </a>
+                    </div>
+                </div>
+                <!-- fourth -->
+                <div class="box"> 
+                    <img id="scaling-3" src="bestie bunnies.jpg" >
+                    <h3> Bunny "The Besties" </h3>
+                    <div class="content">
+                        <span> $30 </span>
+                        <a href="#"> Add to Cart> </a>
+                    </div>
+                </div>
+        
+                <!-- fifth -->
+                <div class="box"> 
+                    <img id="scaling-4" src="catties.jpg" alt="">
+                    <h3> Cat "The Little Red" </h3>
+                    <div class="content">
+                        <span> $10 </span>
+                        <a href="#"> Add to Cart> </a>
+                    </div>
+                </div>
+                <!-- sixth -->
+                <div class="box"> 
+                    <img id="scaling-5" src="crochet kit.jpg" alt="">
+                    <h3> All In One Crochet Kit </h3>
+                    <div class="content">
+                        <span> $20 </span>
+                        <a href="#"> Add to Cart> </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+
+            $(document).ready(function(){
+                $('#scaling').hover (
+                    function () {
+                        $(this).css('transform' , 'scale(1.5)');
+                    },
+                    function() {
+                        $(this).css('transform' , '');
+                    }
+                );
+            });
+
+            $(document).ready(function(){
+                $('#scaling-1').hover (
+                    function () {
+                        $(this).css('transform' , 'scale(1.5)');
+                    },
+                    function() {
+                        $(this).css('transform' , '');
+                    }
+                );
+            });
+
+            $(document).ready(function(){
+                $('#scaling-2').hover (
+                    function () {
+                        $(this).css('transform' , 'scale(1.5)');
+                    },
+                    function() {
+                        $(this).css('transform' , '');
+                    }
+                );
+            });
+
+            $(document).ready(function(){
+                $('#scaling-3').hover (
+                    function () {
+                        $(this).css('transform' , 'scale(1.5)');
+                    },
+                    function() {
+                        $(this).css('transform' , '');
+                    }
+                );
+            });
+
+            $(document).ready(function(){
+                $('#scaling-4').hover (
+                    function () {
+                        $(this).css('transform' , 'scale(1.5)');
+                    },
+                    function() {
+                        $(this).css('transform' , '');
+                    }
+                );
+            });
+
+            $(document).ready(function(){
+                $('#scaling-5').hover (
+                    function () {
+                        $(this).css('transform' , 'scale(1.5)');
+                    },
+                    function() {
+                        $(this).css('transform' , '');
+                    }
+                );
+            });
+
+            $(document).ready(function(){
+                $('#scaling-6').hover (
+                    function () {
+                        $(this).css('transform' , 'scale(1.5)');
+                    },
+                    function() {
+                        $(this).css('transform' , '');
+                    }
+                );
+            });
+
+        </script>
+    </body>
+</html>

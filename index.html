@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> My First Webpage </title>
+        <!-- access to css -->
+        <link rel="stylesheet" href="style.css">
+        <!-- access to icons -->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+        <!-- link access to contact form -->
+        <link rel="stylesheet" href="style.css">
+        <script src='jquery.js'></script>
+	    <script src='jquery.elevatezoom.js'></script>
+        <script src="main.js"> </script>
+
+
+        
+    </head>
+
+
+    <body>
+        <!-- this is navigation bars -->
+        <header>
+            <a href="#" class="logo">
+                <img src="https://st2.depositphotos.com/4696897/9998/v/450/depositphotos_99989760-stock-illustration-flat-icon-on-white-background.jpg" alt="">
+            </a>
+
+            <!-- this is menu icons -->
+            <i class='bx bx-menu' id="menu-icon"></i>
+
+            <!-- links to other sections of the webpage -->
+            <ul class="navbar">
+                <li> <a href="index.html"> Home </a> </li>
+                <li> <a href="about.html"> About Us </a> </li>
+                <li> <a href="product.html"> Products </a> </li>
+                <li> <a href="contact.html"> Contact </a> </li>
+                <li> <a href="feedback.html"> Contact </a> </li>
+            </ul>
+
+            <!-- icons for the header -->
+            <div class="header-icon">
+                <i class='bx bx-cart'></i>
+                <i class='bx bx-search-alt-2' id="search-icon"></i>
+            </div>
+
+            <!-- search box -->
+            <div class="search-box">
+                <input type="search" name="" id="" placeholder="Search Here...">
+            </div>
+        </header>
+
+        <!-- Home page -->
+        <section class="home" id="home">
+            <div class="home-text-align">
+                <h1> Little cuteness <br> can bring happiness </h1>
+                <section class="container">
+                    <div class="slider-wrapper">
+                        <div class="slider">
+                            <img id="slide-1" src="im1.jpg">
+                            <img id="slide-2" src="im2.jpg">
+                            <img id="slide-3" src="im3.jpg">
+                        </div>
+                        
+                        <div class="slider-nav">
+                            <a href="#slide-1"> </a>
+                            <a href="#slide-2"> </a>
+                            <a href="#slide-3"> </a>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+        </section>  
+       
+        <script> 
+             $('#slide-1').elevateZoom({
+                zoomType: "inner",
+                cursor: "crosshair",
+                zoomWindowFadeIn: 500,
+                zoomWindowFadeOut: 750
+            }); 
+        </script>
+
+        
+
+        
+    </body>
+</html>
